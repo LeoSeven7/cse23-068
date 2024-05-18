@@ -1,0 +1,40 @@
+header {
+    background-color: wheat;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    position: relative; 
+}
+
+nav ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #333;
+}
+
+footer {
+    background-color: transparent;
+    color: black;
+    padding: 0.05% 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23f16e00' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708L8.707 11l-7.547 2.547a.5.5 0 0 1-.708 0z'/></svg>");
+}

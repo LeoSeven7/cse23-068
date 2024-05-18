@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Harry Potter and the Philosopher's Stone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="<KEY>" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/movie.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+          <img src="Images/Warner Bros Logo.jpeg" alt="Warner Bros Logo">
+      </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <!-- Add more navigation links as needed -->
+      </ul>
+      <div class="navbar-action">
+        <form class="d-flex">
+            <input id="search-input" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1>Harry Potter</h1>
+    <section>
+      <img src="Images/Harry Potter.jpeg" alt="Harry Potter movie poster">
+    </section>
+    <section>
+      <h2>Movie Details</h2>
+      <ul>
+        <li>Director: <NAME></li>
+        <li>Release Date: November 16, 2001</li>
+        <li>Genre: Adventure, Family, Fantasy</li>
+        <li>Runtime: 152 minutes</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Cast</h2>
+      <ul>
+        <li><NAME> as Harry Potter</li>
+        <li><NAME> as Ron Weasley</li>
+        <li><NAME> as Hermione Granger</li>
+        <li><NAME> as <NAME></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Plot Summary</h2>
+      <p>
+        Harry Potter and the Philosopher's Stone is a 2001 fantasy film directed by <NAME> and distributed by Warner Bros. Pictures. It is based on J. K. Rowling's novel of the same name. The film stars <NAME>, <NAME>, and <NAME> as three young wizards attending Hogwarts School of Witchcraft and Wizardry.
+      </p>
+    </section>
+    <section>
+        <h2>Trailer</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/h1Ob6OnRmew?si=vlCvBQREXYv5bdHm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+  </main>
+  <footer>
+    <p>&copy; 2022 Your Website. All rights reserved.</p>
+  </footer>
+
+  <script>
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        width: 560,
+        height: 315,
+        videoId: '1cK1pcQyzg0',
+        events: {
+          'onReady': onPlayerReady
+        }
+      });
+    }
+
+    function onPlayerReady(event) {
+      event.target.playVideo();
+    }
+  </script>
+</body>
+</html>
+

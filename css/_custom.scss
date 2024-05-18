@@ -1,0 +1,7 @@
+// _custom.scss
+
+// Override default font size
+$font-size-base: 16px;
+
+// Import Bootstrap and BootstrapVue's Sass files to apply the custom variables
+@import "node_modules/bootstrap/scss/bootstrap";

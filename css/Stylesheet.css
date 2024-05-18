@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+
+header {
+    background-color: wheat;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    position: relative; 
+}
+
+header img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+header h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #333;
+}
+
+.movie-masonry {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.masonry-item {
+    position: relative;
+    width: 100%;
+}
+
+.masonry-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer {
+    background-color: transparent;
+    color: black;
+    padding: 0.05% 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.upcoming-releases {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .movie-item {
+    flex: 1 1 20%;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .movie-item img {
+    width: 100%;
+    height: auto;
+    max-width: 500px; /* Adjust this value as per your requirement */
+  }
